@@ -152,8 +152,6 @@ body {
   display: flex;
   background-color: transparent;
   width:300px;
-
-  
 }
 
 .hero .wrapper .text {
@@ -171,7 +169,6 @@ body {
 }
 
 .hero .dynamic-text li {
-
   color: var(--orange);
   font-size: 20px;
   font-weight: 500;
@@ -190,9 +187,7 @@ body {
 .dynamic-text li span {
   position: relative;
   margin: 0px 0;
- 
   margin-top: -10rem;
-
 }
 
 .dynamic-text li span::after {
@@ -203,7 +198,6 @@ body {
   height:60px;
   justify-content: left;
   margin-top: auto;
-
   animation: typing 5s steps(14) infinite;
 }
 
