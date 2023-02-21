@@ -9,7 +9,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./img/favicon/favicon.ico"
+      href="./img/favicon/favicon-32x32.png"
     />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,13 +18,29 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- cdnjs.com fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- anime style css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
     <!-- My Style -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -37,6 +53,7 @@
         <a href="#about">Tentang Kami</a>
         <a href="#menu">Menu</a>
         <a href="#team">Team</a>
+        <a href="#tes">Pelanggan</a>
         <a href="#contact">Kontak</a>
       </div>
 
@@ -58,16 +75,17 @@
           <div id="countdown-timer"></div>
         </h1>
         <h1>Teh <span>Payung</span></h1>
-        <p
-          class="animate__animated animate__fadeInUp animate__delay-ls"
-          ata-aos="fade-up"
-          data-aos-duration="2000"
-        >
-          Dengan rasa khas Indonesia Teh Herbal yang menyehatkan.
-        </p>
+        <div class="wrapper">
+          <ul class="dynamic-text">
+            <li><span>meningkatkan trombosit</span></li>
+            <li><span>Mengobati Cacingan</span></li>
+            <li><span>Miningkatkan Nafsu Makan</span></li>
+            <li><span>Meredakan Nyeri Haid</span></li>
+          </ul>
+        </div>
 
         <a
-          href="https://wa.me/+6282374982419"
+          href="https://wa.me/+6281279998843"
           target="_blank"
           class="cta animate__animated animate__fadeInUp animate__delay-ls"
           ata-aos="fade-up"
@@ -79,35 +97,40 @@
     </section>
     <!-- Hero Section And-->
     <!--About Section Start  -->
-    <section id="about" class="about" data-aos="fade-up">
-      <h2 class="w-full" data-aos="fade-up" data-aos-duration="1000">
-        <span> Tentang</span> Kami
-      </h2>
+    <section id="about" class="about">
+      <h2 class="w-full" data-aos="fade-up"><span> Tentang</span> Kami</h2>
       <div class="row">
         <div class="about-img" data-aos="fade-right">
-          <img src="./img/menutehcelup.png" alt="Tentang Kami" />
+          <video controls>
+            <source src="video/tutorial.mp4" type="video/MP4" />
+          </video>
         </div>
         <div class="content">
-          <h3 class="w-full" data-aos="fade-up" data-aos-duration="1000">
-            Mengenal Teh Payung Kami?
-          </h3>
+          <h3 class="w-full" data-aos="fade-left">Mengenal Teh Payung Kami?</h3>
           <p
             class="w-full text-justify"
-            data-aos="fade-up"
+            data-aos="fade-left"
             data-aos-duration="1000"
           >
-            Teh Payung adalah teh herbal yang mempunyai rasa nikmat dan rasa
-            khas indonesia,dan kami menciptakan rasa teh ini untuk pencipta teh
-            yang sesui dengan kriteria semua orang.
+            Teh celup payung adalah produk minuman terbaru yang berbahan
+            dasarkan daun papaya yang di padukan menggunakan daun mint dan juga
+            bunga melati sehingga menghasilkan perpaduan rasa nikmat yang pas.
+            The ini memiliki kandungan gizi diantaranya vitamin A, vitamin B1,
+            vitamin C kalori protein, dan juga air sehingga memiliki berbagai
+            manfaat diantaranya meningkatkan trombosit, mengobati
+            helminthasis(cacingan), meningkatkan nafsu makan, dan dapat
+            meredakan nyeri haid.
           </p>
-          <p class="w-full" data-aos="fade-up" data-aos-duration="1000">
-            Banyak teh yang sangat baik, dan kami mencoba teh kami juga sangat
-            baik untuk di konsumsi dan di nikmati semua kalangan.
-          </p>
-          <h3 class="w-full" data-aos="fade-up" data-aos-duration="1000">
+
+          <h3 class="w-full" data-aos="fade-left" data-aos-duration="1000">
             Ikitu Sosial Media Kami :
           </h3>
-          <span class="social" id="sosial">
+          <span
+            class="social"
+            id="sosial"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
             <a href="#"><i data-feather="instagram"></i></a>
             <a href="#"><i data-feather="twitter"></i></a>
             <a href="#"><i data-feather="facebook"></i></a>
@@ -120,168 +143,491 @@
 
     <!-- Menu Section Start -->
     <section id="menu" class="menu">
-      <h2>
-        <span
-          class="animate__animated animate__fadeInUp animate__delay-ls"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          Menu</span
-        >
+      <h2 class="w-full" data-aos="fade-right">
+        <span> Menu</span>
         Kami
       </h2>
-      <p
-        class="animate__animated animate__fadeInUp animate__delay-ls"
-        ata-aos="fade-up"
-        data-aos-duration="1000"
-      >
-        untuk saat ini kami masih mempunyai dua varian, ya itu teh Payung Susu dan
-        teh Payung Murni.
-      </p>
-      <div class="row">
-        <div class="menu-card">
-          <img
-            src="./img/menu/teh celup.jpg"
-            alt="celup"
-            class="menu-card-img"
-          />
-          <h3 class="menu-card-title">- Teh Celup Saji -</h3>
-          <p class="menu-card-price">
-            <a
-              href="https://wa.me/+6282374982419"
-              target="_blank"
-              class="cta animate__animated animate__fadeInUp animate__delay-ls"
-              ata-aos="fade-up"
-              data-aos-duration="3000"
-              >IDR 5K</a
-            >
-          </p>
+
+      <div class="container">
+        <div class="row">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="./img/menu/milkteak.png" alt="" />
+          <h3>Milk Tea Payung</h3>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <span>IDR 19K</span>
+          <a href="#" class="btn">Pesan Sekarang</a>
         </div>
-        <div class="menu-card">
-          <img
-            src="./img/menu/milkteak.png"
-            alt="3kgpink"
-            class="menu-card-img"
-          />
-          <h3 class="menu-card-title">- Teh Tubruk Payung -</h3>
-          <p class="menu-card-price">
-            <a
-              href="https://wa.me/+6282374982419"
-              target="_blank"
-              class="cta animate__animated animate__fadeInUp animate__delay-ls"
-              ata-aos="fade-up"
-              data-aos-duration="3000"
-              >IDR 19K</a
-            >
-          </p>
+        <div class="row">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="./img/menu/teh celup11.png" alt="" />
+          <h3>Teh Celup Payung</h3>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <span>IDR 18K</span>
+          <a href="#" class="btn">Pesan Sekarang</a>
         </div>
-        <div class="menu-card">
-          <img
-            src="./img/menu/teh celup11.png"
-            alt="3kgpink"
-            class="menu-card-img"
-          />
-          <h3 class="menu-card-title">- Teh Celup Kotak -</h3>
-          <p class="menu-card-price">
-            <a
-              href="https://wa.me/+6282374982419"
-              target="_blank"
-              class="cta animate__animated animate__fadeInUp animate__delay-ls"
-              ata-aos="fade-up"
-              data-aos-duration="3000"
-              >IDR 18K</a
-            >
-          </p>
+        <div class="row">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="./img/menu/teh tubruk.jpg" alt="" />
+          <h3>Teh Saji Payung</h3>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span>IDR 10K</span>
+          <a href="#" class="btn">Pesan Sekarang</a>
         </div>
       </div>
     </section>
     <!-- Menu Section And -->
     <!-- Tim kami -->
     <section id="team" class="team">
-      <h2>
-        <span
-          class="animate__animated animate__fadeInUp animate__delay-ls"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          Team</span
-        >
-        Kami
-      </h2>
-      <p
+      <h2
+        class="w-full"
         class="animate__animated animate__fadeInUp animate__delay-ls"
-        ata-aos="fade-up"
+        data-aos="fade-right"
         data-aos-duration="1000"
       >
-        Ini adalah tim kami yang sampai saat ini masih solid untuk memberikan
-        racikan-racikan teh yang lebih baik lagi untuk konsumen.
+        <span> Team</span>
+        Kami
+      </h2>
+      <p data-aos="fade-left">
+        Ini adalah tim kami yang sudah berpengalan dan berkompeten di bidangnya
+        masing-masing.
       </p>
-      <div class="row">
+      <div class="row" data-aos="fade-up">
         <div class="myteam">
-          <img src="./img/team/mth.png" alt="team1" class="myteam-img" />
-          <h3 class="myteam-title">- Larasati- <span>CEO</span></h3>
-          <p class="follow">
-            <a
-              href="#"
-              target="_blank"
-              class="cta animate__animated animate__fadeInUp animate__delay-ls"
-              ata-aos="fade-up"
-              data-aos-duration="3000"
-              >Ikuti Saya</a
-            >
+          <img src="./img/team/diah ayu.png" alt="team1" class="myteam-img" />
+          <h3 class="myteam-title" data-aos="fade-up">
+            - Diah Ayu Septianingsih -
+          </h3>
+          <span class="manager" data-aos="fade-up" data-aos-duration="1000"
+            >General Manager</span
+          >
+          <p class="follow" data-aos="fade-up">
+            <a href="#" target="_blank">Ikuti Saya</a>
           </p>
         </div>
-        <div class="myteam">
-          <img src="./img/team/mth.png" alt="team2" class="myteam-img" />
-          <h3 class="myteam-title">- M. Toyib Hidayat- <span>CTO</span></h3>
+        <div class="myteam" data-aos="fade-up">
+          <img src="./img/team/yuda.png" alt="team2" class="myteam-img" />
+          <h3 class="myteam-title" data-aos="fade-up">
+            - Muhammad Yudha Manggala -
+          </h3>
+          <span class="manager" data-aos="fade-up" data-aos-duration="1000"
+            >Manager Pemasaran</span
+          >
 
-          <p class="follow">
-            <a
-              href="#"
-              target="_blank"
-              class="cta animate__animated animate__fadeInUp animate__delay-ls"
-              ata-aos="fade-up"
-              data-aos-duration="3000"
-              >Ikuti Saya</a
-            >
+          <p class="follow" data-aos="fade-up">
+            <a href="#" target="_blank">Ikuti Saya</a>
           </p>
         </div>
-        <div class="myteam">
-          <img src="./img/team/mth.png" alt="team3" class="myteam-img" />
-          <h3 class="myteam-title">- Diah A- <span>CAO</span></h3>
+        <div class="myteam" data-aos="fade-up">
+          <img src="./img/team/taufiq.png" alt="team3" class="myteam-img" />
+          <h3 class="myteam-title" data-aos="fade-up">
+            - Muhammad Taufiqur Rohman -
+          </h3>
+          <span class="manager" data-aos="fade-up" data-aos-duration="1000"
+            >Manager Produksi</span
+          >
 
-          <p class="follow">
-            <a
-              href="#"
-              target="_blank"
-              class="cta animate__animated animate__fadeInUp animate__delay-ls"
-              ata-aos="fade-up"
-              data-aos-duration="3000"
-              >Ikuti Saya</a
-            >
+          <p class="follow" data-aos="fade-up">
+            <a href="#" target="_blank">Ikuti Saya</a>
+          </p>
+        </div>
+        <div class="myteam" data-aos="fade-up">
+          <img src="./img/team/imam.png" alt="team3" class="myteam-img" />
+          <h3 class="myteam-title" data-aos="fade-up">- Imam Kurniawan -</h3>
+          <span class="manager" data-aos="fade-up" data-aos-duration="1000"
+            >Manager Keuangan</span
+          >
+
+          <p class="follow" data-aos="fade-up">
+            <a href="#" target="_blank">Ikuti Saya</a>
           </p>
         </div>
       </div>
     </section>
     <!-- Tim kami -->
+    <!-- testimoni start -->
+    <section id="tes" class="tes">
+      <h2
+        class="w-full"
+        class="animate__animated animate__fadeInUp animate__delay-ls"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
+        <span> Testimoni</span>
+        Client
+      </h2>
+      <p data-aos="fade-left">
+        Beberapa Pelanggan yang sudah memberikan bukti bahwa Produk yang kami
+        Produksi dan Pasarkan bermanfaat dan enak untuk di konsumsi oleh orang
+        lain.
+      </p>
+      <div #swiperRef="" class="swiper mySwiper container">
+        <div class="swiper-wrapper content">
+          <!-- slide 1 -->
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="img/team/mth.png" alt="" />
+              </div>
+              <div class="media-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+              </div>
+              <div class="name-professional">
+                <span class="name">Budiman</span>
+                <span class="professional"
+                  >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti, molestias!</span
+                >
+              </div>
+              <div class="reting">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="button">
+                <button class="aboutMe">About Me</button>
+                <button class="HireMe">Here Me</button>
+              </div>
+            </div>
+          </div>
+          <!-- slide 2 -->
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="img/team/mth.png" alt="" />
+              </div>
+              <div class="media-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+              </div>
+              <div class="name-professional">
+                <span class="name">Trisna</span>
+                <span class="professional"
+                  >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti, molestias!</span
+                >
+              </div>
+              <div class="reting">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="button">
+                <button class="aboutMe">About Me</button>
+                <button class="HireMe">Here Me</button>
+              </div>
+            </div>
+          </div>
+          <!-- slide 3 -->
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="img/team/mth.png" alt="" />
+              </div>
+              <div class="media-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+              </div>
+              <div class="name-professional">
+                <span class="name">M Toyib Hidayat</span>
+                <span class="professional"
+                  >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti, molestias!</span
+                >
+              </div>
+              <div class="reting">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="button">
+                <button class="aboutMe">About Me</button>
+                <button class="HireMe">Here Me</button>
+              </div>
+            </div>
+          </div>
+          <!-- slide 4 -->
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="img/team/mth.png" alt="" />
+              </div>
+              <div class="media-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+              </div>
+              <div class="name-professional">
+                <span class="name">Kadir</span>
+                <span class="professional"
+                  >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti, molestias!</span
+                >
+              </div>
+              <div class="reting">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="button">
+                <button class="aboutMe">About Me</button>
+                <button class="HireMe">Here Me</button>
+              </div>
+            </div>
+          </div>
+          <!-- slide 5 -->
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="img/team/mth.png" alt="" />
+              </div>
+              <div class="media-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+              </div>
+              <div class="name-professional">
+                <span class="name">Adha</span>
+                <span class="professional"
+                  >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti, molestias!</span
+                >
+              </div>
+              <div class="reting">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="button">
+                <button class="aboutMe">About Me</button>
+                <button class="HireMe">Here Me</button>
+              </div>
+            </div>
+          </div>
+          <!-- slide 6 -->
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="img/team/mth.png" alt="" />
+              </div>
+              <div class="media-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+              </div>
+              <div class="name-professional">
+                <span class="name">Sarwendi</span>
+                <span class="professional"
+                  >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti, molestias!</span
+                >
+              </div>
+              <div class="reting">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="button">
+                <button class="aboutMe">About Me</button>
+                <button class="HireMe">Here Me</button>
+              </div>
+            </div>
+          </div>
+          <!-- slide 7 -->
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="img/team/mth.png" alt="" />
+              </div>
+              <div class="media-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+              </div>
+              <div class="name-professional">
+                <span class="name">Andin</span>
+                <span class="professional"
+                  >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti, molestias!</span
+                >
+              </div>
+              <div class="reting">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="button">
+                <button class="aboutMe">About Me</button>
+                <button class="HireMe">Here Me</button>
+              </div>
+            </div>
+          </div>
+          <!-- slide 8 -->
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="img/team/mth.png" alt="" />
+              </div>
+              <div class="media-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+              </div>
+              <div class="name-professional">
+                <span class="name">Roni A</span>
+                <span class="professional"
+                  >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti, molestias!</span
+                >
+              </div>
+              <div class="reting">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="button">
+                <button class="aboutMe">About Me</button>
+                <button class="HireMe">Here Me</button>
+              </div>
+            </div>
+          </div>
+          <!-- slide 9 -->
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="img/team/mth.png" alt="" />
+              </div>
+              <div class="media-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+              </div>
+              <div class="name-professional">
+                <span class="name">Sandra</span>
+                <span class="professional"
+                  >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti, molestias!</span
+                >
+              </div>
+              <div class="reting">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="button">
+                <button class="aboutMe">About Me</button>
+                <button class="HireMe">Here Me</button>
+              </div>
+            </div>
+          </div>
+          <!-- slide 10 -->
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="img/team/mth.png" alt="" />
+              </div>
+              <div class="media-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+              </div>
+              <div class="name-professional">
+                <span class="name">Rena</span>
+                <span class="professional"
+                  >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti, molestias!</span
+                >
+              </div>
+              <div class="reting">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="button">
+                <button class="aboutMe">About Me</button>
+                <button class="HireMe">Here Me</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- testimoni and -->
 
     <!-- Contact Section Start -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact" data-aos="fade-right">
       <h2><span> Kontak</span> Kami</h2>
-      <p>
+      <p data-aos="fade-left">
         Untuk saran dan untuk mengenal tentang kami lebih dekat silahkan hubungi
         kami TEH PAYUNG.
       </p>
-      <div class="row">
+      <div class="row" data-aos="fade-right">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.416785217018!2d105.27179661425801!3d-5.035967052626575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40a5ed11b60fe7%3A0x23207da09073bcf5!2sPangkalan%20gas%20Siti%20nurhayati!5e0!3m2!1sid!2sid!4v1675259365924!5m2!1sid!2sid"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3358.613097045755!2d105.27767531425799!3d-5.03133565259185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2a23d61c2e734fd1!2zNcKwMDEnNTIuOCJTIDEwNcKwMTYnNDcuNSJF!5e1!3m2!1sid!2sid!4v1676929703725!5m2!1sid!2sid"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
           class="maps"
         ></iframe>
 
-        <form action="">
+        <form action="" data-aos="fade-left" data-aos-duration="1000">
           <div class="input-group">
             <i data-feather="user"></i>
             <input type="text" placeholder="Nama Lengkap" />
@@ -327,6 +673,10 @@
     </footer>
 
     <!-- Footer And -->
+    <!-- back to top -->
+    <div id="progress">
+      <span id="progress-value">&#129121;</span>
+    </div>
 
     <!-- Feather Icons -->
     <script>
@@ -334,5 +684,47 @@
     </script>
     <!-- my javascript -->
     <script src="js/script.js"></script>
+    <!-- animatedcss -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        slidesPerGroup: 4,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        autoplay: {
+          delay: 2800,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        // slideshow
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          530: {
+            slidesPerView: 2,
+          },
+          950: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
